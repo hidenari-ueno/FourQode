@@ -16,16 +16,21 @@ Rails.application.routes.draw do
   resource :questions, only: [:show]
   resources :mypages do
     collection do
-      get :index1
-      get :index2
-      get :index3
-      get :index4
-      get :index5
-      get :logout
-      get :mail_password
-      get :notification
+      get :notice_chart
+      get :contract_app_chart
+      get :claeredup_chart
+      get :openquestion_chart
+      get :sloved_chart
+      get :overall_rating_chart
+      gat :guid
+      get :comment_chart
+      get :contact_chart
+      get :sales_chart
+      get :coincharge_chart
       get :profile
+      get :mail_password
       get :card
+      get :logout
     end
   end
 end

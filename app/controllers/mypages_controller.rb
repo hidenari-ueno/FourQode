@@ -1,22 +1,47 @@
 class MypagesController < ApplicationController
-  def index1
+  # お知らせ一覧
+  def notice_chart
   end
-  def index2
+  # 請負申請一覧
+  def contact_app_chart
   end
-  def index3
+  # 解決した質問（質問側）
+  def clearedup_chart
   end
-  def index4
+  # 未解決質問（質問側）
+  def openquestion_chart
   end
-  def index5
+  # 解決した質問（解決側）
+  def sloved_chart
   end
-  def logout
+  # 総合評価
+  def overall_rating_chart
   end
-  def mail_password
+  # ガイド
+  def guid
   end
-  def notification
+  # コメント一覧
+  def comment_chart
   end
+  # お問い合わせ
+  def contact_chart
+  end
+  # 売り上げ
+  def sales_chart
+  end
+  # コインチャージ
+  def coincharge_chart
+  end
+  # プロフィール
   def profile
   end
+  # アドレス/パスワード
+  def mail_password
+  end
+  # お支払い方法登録/変更
   def card
+  end
+  # ログアウト
+  def logout
   end
 end
