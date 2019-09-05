@@ -3,30 +3,28 @@
     %li.mypageSideBarList
       = link_to "マイページ",  class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "お知らせ", index1_mypages_path, class: "mypageNavList"
+      = link_to "お知らせ", notice_chart_mypages_path, class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "請負申請者一覧", index1_mypages_path, class: "mypageNavList"
+      = link_to "請負申請者一覧", contract_app_chart_mypages_path, class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "質問する", class: "mypageNavList"
+      = link_to "解決した質問(質問側)", clearedup_chart_mypages_path, class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "解決した質問(質問側)", index2_mypages_path, class: "mypageNavList"
+      = link_to "未解決の質問(質問側)", openquestion_chart_mypages_path, class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "未解決の質問(質問側)", index2_mypages_path, class: "mypageNavList"
+      = link_to "解決した質問(解決側)", solved_chart_mypages_path, class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "解決した質問(解決側)", index3_mypages_path, class: "mypageNavList"
+      = link_to "評価一覧", overall_rating_chart_mypages_path,class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "評価一覧", index4_mypages_path,class: "mypageNavList"
+      = link_to "コメント一覧",comment_chart_mypages_path,class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "コメント一覧",class: "mypageNavList"
+      = link_to "ガイド", guid_mypages_path,class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "ガイド", class: "mypageNavList"
-    %li.mypageSideBarList
-      = link_to "お問い合わせ", class: "mypageNavList"
+      = link_to "お問い合わせ", contact_chart_mypages_path,class: "mypageNavList"
   %ul.mypageSideBarLists
     %li.mypageSideBarList
-      = link_to "売上", index5_mypages_path,class: "mypageNavList"
+      = link_to "売上", sales_chart_mypages_path,class: "mypageNavList"
     %li.mypageSideBarList
-      = link_to "コインチャージ", index5_mypages_path, class: "mypageNavList"
+      = link_to "コインチャージ", coincharge_chart_mypages_path, class: "mypageNavList"
   %ul.mypageSideBarLists
     %li.mypageSideBarList
       = link_to "プロフィール", profile_mypages_path, class: "mypageNavList"

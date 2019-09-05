@@ -1,23 +1,228 @@
-.mypagesNotification{
-    padding:30px;
+// 全体カラー
+.mypage{
+    background-color:rgba(231, 231, 231, 0.904);
+}
+
+//右側コンテンツの大枠、ヘッダーの設定
+// お知らせ詳細、請負申請者一覧、解決した質問(解決側)、未解決の質問,解決した質問(解決側)、総合評価、売り上げ
+.mypagesNotifications,.mypageContracts,.mypageclearedups,.mypageOpenquestions,.mypageSolvedQs,.mypageOverallRating,.mypageSales{
+    background-color: white;
+    margin:30px;
     width:60vw;
-    .notificationDetails{
-        font-size: 40px;
+    box-sizing: border-box;
+    h3{
+        text-align:center;
+        font-size: 30px;
+        padding:40px 0;
+        margin:0 40px;
     }
-    .notificationHead{
-        border:0.5px solid #c0c0c0;
-        border-left:5px solid #58EB90;
-        display:flex;
-        font-size:20px;
-        padding:10px;
-        .notificationTitle{
-            margin-left:20px;
+    // お知らせ詳細,請負申請者一覧,解決した質問(解決側)、未解決の質問、解決した質問(解決側)、総合評価
+    .notice,.contractApp,.clearedup,.openquestion,.solvedQ,.overallRatings{
+        margin:0 20px;
+        padding:0 20px;
+        border-top:solid 1px lightgray;
+        // お知らせ一覧
+        .noticeItems{
+            display:flex;
+            justify-content: flex-end;
+            margin:20px 0;
+            &Date{
+                margin-right:auto;
+                font-size:20px;
+            }
+            &IconDown{
+                font-size:30px;
+                margin-right:100px;
+            }
+            &IconUp{
+                display:none;
+                font-size:30px;
+                margin-right:100px;
+            }
+        }
+        .noticeTitle{
+            font-size:20px;
+            max-width: 550px;
+            margin-bottom:20px;
+            p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            }
+        }
+        .noticeBody{
+            margin: 50px 30px 50px;
+            max-width: 550px;
+            display:none;
+        }
+
+        //請負申請者依頼一覧
+        // アイコン共有設定（請負申請者一覧、解決した質問(解決側))
+        .contractAppIcon,.solvedQIcon,.overAllIcon{
+            width:80px;
+            height:80px;
+            border-radius:40px;
+            background-color: black;
+            display:inline-block;
+            vertical-align: middle;
+            margin:30px 0;
+        }
+        // 共有設定（請負申請者一覧、解決した質問(解決側)）
+        .contractAppdetails,.solvedQDetails{
+            vertical-align: middle;
+            display:inline-block;
+            margin-left:30px;
+            min-width:350px;
+            .contractAppdetailsDate,.contractAppdetailsFromUser{
+                margin:20px 0;
+                #text{
+                    color:lightgray;
+                }
+            }
+            span{
+                font-weight:bold;
+            }
+            .userName{
+                display:inline-block;
+
+            }
+            .PostedDate{
+                display:inline-block;
+            }
+        }
+
+        // 解決した質問一覧(質問側),未解決質問一覧共有
+        .news{
+            display:flex;
+            align-items: center;
+            padding:0;
+            margin:10px 0;
+            .fas{
+                font-size:30px;
+                color:red
+            }
+            .message{
+                color:red;
+                text-align: center;
+                margin-left:20px;
+            }
+        }
+        .labels{
+            margin:20px 0 0;
+            .label{
+                background-color:gainsboro;
+                color:white;
+                display:inline-block;
+                padding:3px 5px;
+                border-radius: 2px;
+            }
+        }
+        .title{
+            font-size:20px;
+            margin: 20px 0;
+        }
+        .statuses{
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:20px;
+            .status{
+                // statusの状況により背景色を変える処理にする
+                background-color: orange;
+                color:white;
+                padding:3px 2px 1px;
+                font-size:13px;
+            }
+            .views{
+                font-size:15px;
+                margin-left:20px;
+                padding:3px 3px 1px;
+            }
+            .answers{
+                font-size:15px;
+                padding:3px 3px 1px;
+            }
+        }
+        .date{
+            display: flex;
+            margin-bottom:20px;
+            .deadline{
+                margin-left:60px;
+            }
+        }
+
+        //総合評価
+        .border{
+            margin:0 20px;
+            padding:0 20px;
+            border-top:solid 1px lightgray;
+        }
+        .allRate{
+            font-weight:bold;
+            text-align:center;
+            margin-top:10px;
+            font-size:20px;
+        }
+        .star{
+            font-size:50px;
+            margin-top:15px;
+            text-align:center;
+        }
+        .allReports{
+            text-align:center;
+            margin:20px 0 40px;
+        }
+        .ratingForClearedup,.ratingForSolved{
+            display:inline-block;
+            font-size:30;
+            padding:15px;
+            width:49.76%;
+            text-align:center;
+            background-color: rgba(231, 231, 231, 0.904);
+        }
+        //選択されているバーのカラー
+        .selected{
+            background-color: white;
+        }
+        .ratingForCleanedupStutz,.ratingForSolvedStutz{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            height:150px;
+            .leftbox{
+                text-align:center;
+                .rate{
+                    font-size:40px;
+                    margin-bottom:25px;
+                    font-weight:bold;
+                    padding-top:40px;
+                }
+            }
+            .starsForCleanedup,.starsForSolved{
+                padding-left:30px;
+                font-size:30px;
+            }
+        }
+        .overAllReport{
+            border-top:solid 1px lightgray;
+            margin:0 20px;
+            padding:0 20px;
+            display:flex;
+            align-items:center;
+            .overAllDetails{
+                width:60%;
+                h4{
+                    margin-bottom:0;
+                    width:90%;
+                }
+            }
+            .overAllIcon{
+                margin-right:50px;
+            }
         }
     }
-    .notificationDetails, .notificationHead{
-        margin-bottom:30px;
+    .fa-star,.fa-star-half{
+        color:gold;
     }
-    .notificationBody{
-        white-space: pre-wrap;
-    }
+
 }

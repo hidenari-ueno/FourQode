@@ -12,7 +12,7 @@ class MypagesController < ApplicationController
   def openquestion_chart
   end
   # 解決した質問（解決側）
-  def sloved_chart
+  def solved_chart
   end
   # 総合評価
   def overall_rating_chart

@@ -17,3 +17,17 @@ $(function(){
     console.log(num)
   });
 });
+//お知らせ詳細のオープンクローズ機能
+//idは動的に取得するように変更
+$(function(){
+  $('.noticeItemsIconDown#notice-1').on('click', function(){
+    $(this).hide()
+    $('.noticeItemsIconUp#notice-1, .noticeBody#notice-1').show()
+  });
+});
+$(function(){
+  $('.noticeItemsIconUp#notice-1').on('click', function(){
+    $('.noticeItemsIconUp#notice-1, .noticeBody#notice-1',).hide()
+    $('.noticeItemsIconDown#notice-1').show()
+  });
+});

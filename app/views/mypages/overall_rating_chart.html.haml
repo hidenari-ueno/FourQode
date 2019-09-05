@@ -1,0 +1,105 @@
+.mypage
+  .mypageSideBars
+    = render partial: "sidebar"
+  .mypageOverallRating
+    %h3
+      総合評価
+    .overallRatings{ style: "margin:0; padding:0;border:none"}
+      .border
+        %p.allRate 4.5
+        .star
+          .far.fa-star
+          .far.fa-star
+          .far.fa-star
+          .far.fa-star
+          .far.fa-star-half
+        %p.allReports　全52件の評価
+      .ratingForClearedup.selected
+        質問側
+      .ratingForSolved
+        回答側
+      -# .ratingForCleanedupStutz´
+      -#   .leftbox
+      -#     .rate 4
+      -#     .allReports 全31件の評価
+      -#   .starsForCleanedup
+      -#     .far.fa-star
+      -#     .far.fa-star
+      -#     .far.fa-star
+      -#     .far.fa-star
+      -# jsで表示・非表示の処理を行う
+      .ratingForSolvedStutz{style: "display:none;"}
+        .leftbox
+          .rate 5
+          .allReports 全21件の評価
+        .starsForSolved
+          .far.fa-star
+          .far.fa-star
+          .far.fa-star
+          .far.fa-star
+          .far.fa-star
+      .overAllReport
+        .overAllDetails
+          %p.postedDate 投稿日　　2019/7/30　22:00
+          %h4.title 地球制服が出来ません
+        .overAllIcon
+        .overAllUser
+          %p.name ちゃんちゃん
+          %p.star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star-half
+      .overAllReport
+        .overAllDetails
+          %p.postedDate 投稿日　　2019/7/30　22:00
+          %h4.title 地球征服がなかなか進まないのですが、悟空もメリオダスもいないのになぜでしょう？
+        .overAllIcon
+        .overAllUser
+          %p.name ちゃんちゃん
+          %p.star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star-half
+      .overAllReport
+        .overAllDetails
+          %p.postedDate 投稿日　　2019/7/30　22:00
+          %h4.title 地球制服が出来ません
+        .overAllIcon
+        .overAllUser
+          %p.name ちゃんちゃん
+          %p.star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star-half
+      .overAllReport
+        .overAllDetails
+          %p.postedDate 投稿日　　2019/7/30　22:00
+          %h4.title 地球制服が出来ません
+        .overAllIcon
+        .overAllUser
+          %p.name ちゃんちゃん
+          %p.star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star-half
+      .overAllReport
+        .overAllDetails
+          %p.postedDate 投稿日　　2019/7/30　22:00
+          %h4.title 地球制服が出来ません
+        .overAllIcon
+        .overAllUser
+          %p.name ちゃんちゃん
+          %p.star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star
+            .far.fa-star-half
